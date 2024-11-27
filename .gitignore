@@ -1,6 +1,7 @@
 # Caches
 /.bundle
 /.sass-cache
+vendor/bundle
 
 # Gemfile locks ignored for gems
 /Gemfile.lock

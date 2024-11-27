@@ -28,7 +28,7 @@ RSpec.describe "Quit", type: :feature do
     expect(status).to be_success
 
     # .. and navigate to the mailcatcher website
-    expect(page).to have_current_path "https://mailcatcher.me"
+    expect(page).to have_current_path "https://tomosia.com"
   end
 
   it "quits cleanly on Ctrl+C" do

@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
   s.author = "Samuel Cochran"
   s.email = "sj26@sj26.com"
-  s.homepage = "https://mailcatcher.me"
+  s.homepage = "https://tomosia.com/"
 
   s.files = Dir[
     "README.md", "LICENSE", "VERSION",
@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   s.executables = ["mailcatcher", "catchmail"]
   s.extra_rdoc_files = ["README.md", "LICENSE"]
 
-  s.required_ruby_version = ">= 3.1"
+  s.required_ruby_version = ">= 2.7.0"
 
   s.add_dependency "eventmachine", "~> 1.0"
   s.add_dependency "faye-websocket", "~> 0.11.1"
@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
   s.add_dependency "net-smtp"
   s.add_dependency "rack", "~> 2.2"
   s.add_dependency "sinatra", "~> 3.2"
-  s.add_dependency "sqlite3", "~> 1.3"
+  s.add_dependency "sqlite3", "< 1.6"
   s.add_dependency "thin", "~> 1.8"
 
   s.add_development_dependency "capybara"
@@ -54,4 +54,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "sprockets-sass"
   s.add_development_dependency "sprockets-helpers"
   s.add_development_dependency "uglifier"
+  s.add_development_dependency "ffi", "< 1.17.0"
 end
